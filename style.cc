@@ -12,6 +12,7 @@
   .header {
     padding: 80px;
     text-align: center;
+    background-image: url("background_image.jpg");
     background: #1abc9c;
     color: white;
   }
