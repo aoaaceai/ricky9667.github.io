@@ -1,0 +1,39 @@
+Tutorial Webpage Brainstorm
+
+Contents:
+1. About me
+    - My Pictures
+    - My Competition Videos
+    - My WCA Results
+
+2. Rubik's Cube startup
+    - Notations
+    - (Structure?)
+    - Sexy move and fingertricks
+    - Tips
+
+3. Cross
+    - Surround yellow center
+    - Finish the Cross
+
+4. First Layer
+    - Sexy move insert
+    - Modify incorrect pieces
+    - Intermediate tricks
+
+5. Second Layer
+    - Righty and Lefty insert
+    - Modify incorrect pieces
+    - Intermediate tricks
+
+6. OLL
+    - Six move method
+    - Sune/Antisune
+    - Intermediate Algs
+
+7. PLL
+    - Corner pieces
+    - Edge pieces
+    - Intermediate Algs
+
+8. Reference
