@@ -5,6 +5,11 @@ body {
     /*position: relative;*/
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
 #header {
     position: absolute;
     top: 50%;
@@ -74,9 +79,9 @@ body {
 
 .notations {
     position: relative;
+
     height: 500px;
     width: auto;
-    padding: 200px;
 }
 
 h3 {
@@ -84,7 +89,6 @@ h3 {
     padding-left: 200px;
 }
 
-p, li {
+p {
     font-size: 20px;
-    padding-left: 250px;
 }
