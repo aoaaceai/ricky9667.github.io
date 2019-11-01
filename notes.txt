@@ -8,6 +8,7 @@ Contents:
 
 2. Rubik's Cube startup
     - Notations
+        - https://jperm.net/3x3/moves
     - (Structure?)
     - Sexy move and fingertricks
     - Tips
