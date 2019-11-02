@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Microsoft JhengHei";
     margin: 0;
-    
     /*position: relative;*/
 }
 
 .flex {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #header {
@@ -69,7 +69,6 @@ body {
 
 .main {
     padding: 30px;
-    font-family: "Arial", Helvetica, sans-serif;
 }
 
 .subtitle {
@@ -86,9 +85,11 @@ body {
 
 h3 {
     font-size: 32px;
-    padding-left: 200px;
+    text-align: center;
 }
 
 p {
     font-size: 20px;
+    padding: 0px 300px;
+    text-align: center;
 }
