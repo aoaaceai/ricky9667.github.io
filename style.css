@@ -102,14 +102,8 @@ p {
 }
 
 .cross_img {
-    display: flex;
-    height: 300px;
-    width: auto;
-    
-}
+    position: relative;
 
-.cross_img > div {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    height: 400px;
+    width: auto;
 }
