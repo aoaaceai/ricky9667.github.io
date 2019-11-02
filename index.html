@@ -8,14 +8,12 @@
 
   <body>  
     <div>
-
-      <img src="./images/background_image.jpg" id="bg_image" />
+      <img src="./images/background_image.jpg" id="bg_image">
 
       <div id="header" class="title">
         <h2>Rubik's Cube Tutorial</h2>
         <h2>魔術方塊3x3入門教學</h2>
       </div>
-
     </div>
 
     <div class="navbar">
@@ -26,7 +24,7 @@
         <a href="#" class="right">關於我</a>
     </div>
 
-    <div class="main flex">
+    <div class="main flex-main">
       <h2 class="subtitle" id="Startup">一、基本概念教學</h2>
       <h3>1. 魔術方塊代號</h3>
       <div>
@@ -42,21 +40,31 @@
           </ul>
       </div>
       
-      <div>
-        <img src="./images/notations.jpg" class="images">
+      <div class="flex-main">
+        <img src="./images/notations.jpg" id="notations">
         <p>*以上圖片取自<a href="https://jperm.net/3x3/moves">Jperm</a>*</p>
       </div>
     </div>
     
-    <div class="main flex">
+    <div class="main flex-main">
       <h2 class="subtitle" id="First">二、第一層</h2>
       <h3>1. 環繞黃色中心</h3>
       
       <div>
         <p>這裡使用的方法叫做LBL(Layer By Layer)，也就是一層一層解的意思</p>
         <p>那我們在開始還原前，會先選擇一個面的顏色作為起始顏色，通常都是用白色</p>
-        <p>那我們的第一個目標，就是先組好一個白色的十字，像這樣：</p>
-        <img src="./images/cross02-2.png" class="images">
+        <p>那我們的第一個目標，就是先組好一個白色的十字，如圖1-1</p>
+        <p>不過直接做白色十字可能有點困難，所以我們先讓4個白色色塊環繞黃色的中心塊，如圖1-2</p>
+
+      <div class="cross_img">
+        <div>
+          <img src="./images/cross02-2.png" class="cross_img">
+        </div>
+        <div>
+          <img src="./images/cross01.png" class="cross_img">
+        </div>
+      </div>
+
       </div>
     </div>
 
