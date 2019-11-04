@@ -1,7 +1,6 @@
 body {
     font-family: "Microsoft JhengHei";
     margin: 0;
-    /*position: relative;*/
 }
 
 .flex-main {
@@ -12,9 +11,9 @@ body {
 }
 
 #header {
-    position: relative;
-    margin-top: 50%;
-    margin-left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
 }
 
@@ -25,9 +24,7 @@ body {
 
 .title {
     color: #073B4C;
-    text-align: center; /*
-    position: inherit;
-    display: inline-block; */
+    text-align: center;
     width: 500px;
     height: auto;
     
