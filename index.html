@@ -25,10 +25,10 @@
         <a href="#First">第一層</a>
         <a href="#Second">第二層</a>
         <a href="#Last">第三層</a>
-        <a href="#" class="right">關於我</a>
+        <a href="#AboutMe" class="right">關於我</a>
     </div>
 
-    <div class="main flex-main">
+    <div class="flex-main">
       <h2 class="subtitle" id="Startup">一、基本概念教學</h2>
       <h3>魔術方塊代號</h3>
       <div>
@@ -40,25 +40,33 @@
 
       <div>
           <ul>
-            <li style="font-size: 20px">
-              如果英文代號後沒有加上任何符號，表示你要面向該面旋轉順時針。
-            </li>
-            <li style="font-size: 20px">
-              如果英文代號後加上一個 ' (唸做prime)，表示你要面向該面旋轉逆時針。
-            </li>
-            <li style="font-size: 20px">
-              如果英文代號後加上一個 2，表示你要面向該面旋轉180度。
-            </li>
+            <li>如果英文代號後沒有加上任何符號，表示你要面向該面旋轉順時針。</li>
+            <li>如果英文代號後加上一個 ' (唸做prime)，表示你要面向該面旋轉逆時針。</li>
+            <li>如果英文代號後加上一個 2，表示你要面向該面旋轉180度。</li>
           </ul>
       </div>
       
       <div class="flex-main">
         <img src="./images/notations.jpg" id="notations">
-        <p>(以上圖片取自<a href="https://jperm.net/3x3/moves">J perm</a>)</p>
       </div>
+
+      <div class="flex-main">
+        <p>另外，在翻動整顆方塊也有特定的記號，分別是</p>
+        <div>
+          <ul>
+            <li>x: 平行RL面</li>
+            <li>y: 平行UD面</li>
+            <li>z: 平行FB面</li>
+          </ul>
+        </div>
+        <p>方向以圖片上為主，若加上 ' 則往反方向，若加上 2 則轉180度</p>
+        <img src="./images/rotations.jpg" id="notations">
+      </div>
+      
+      <p>(以上圖片取自<a href="https://jperm.net/3x3/moves">J perm</a>)</p>
     </div>
     
-    <div class="main flex-main">
+    <div class="flex-main">
       <h2 class="subtitle" id="First">二、第一層</h2>
       <h3>1. 底面十字</h3>
       
@@ -138,7 +146,7 @@
       </div>
     </div>
 
-    <div class="main flex-main">
+    <div class="flex-main">
       <h2 class="subtitle" id="Second">三、第二層</h2>
       <div class="flex-main">
         <p>第一層完成之後，接下來就要向第二層邁進啦！</p>
@@ -156,12 +164,18 @@
       </div>
 
       <div>
-        <p style="padding-top: 40px">確認以上兩點後，</p>
+        <p style="padding-top: 40px">確認以上兩點後，就是完成公式啦！</p>
+        <p>先介紹往邊塊右下放的作法</p>
+        <p>首先，先做U R U' R'把邊塊跟角塊組合在一起</p>
+        <p>接下來做一個y(把右面翻到自己前面)</p>
+        <p>再做U' L' U L 把邊塊和角塊一起放回原來的空槽</p>
+        <p>(注意：因為剛剛有一個y的動作，所以空槽從右邊移到了左邊)</p>
+        <img src="./images/second_case1.png" class="intro_img">
       </div>
       
     </div>
 
-    <div class="main flex-main">
+    <div class="flex-main">
       <h2 class="subtitle" id="Last">四、第三層</h2>
     </div>
 

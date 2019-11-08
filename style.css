@@ -69,6 +69,7 @@ body {
 
 .main {
     padding: 30px;
+    white-space: nowrap;
 }
 
 .subtitle {
@@ -78,9 +79,8 @@ body {
 
 #notations {
     position: relative;
-
-    height: 500px;
-    width: auto;
+    width: 600px;
+    height: auto;
 }
 
 h3 {
@@ -103,7 +103,7 @@ p {
     }
     p {
         font-size: 16px;
-        padding: 0px 50px;
+        padding: 0;
     }
 }
 
@@ -124,4 +124,9 @@ table, th, td {
 
 .alg_table {
     display: flex;
+}
+
+li {
+    font-size: 20px;
+    text-align: left;
 }
