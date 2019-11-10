@@ -3,6 +3,9 @@
   
   <head>
       <link href="./style.css" rel="stylesheet" type="text/css">
+      <!--
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      -->
       <title>Rubik's Cube Tutorial</title>
   </head>
 
@@ -84,30 +87,38 @@
       <p style="padding-top: 40px">那我們先從「白色邊塊圍繞黃色中心」開始吧~</p>
       <p>遇到以下情況時，請按照下面的做法完成公式</p>
 
-      <div class="alg_table">
-        <table style="width: 50%; height: 50%;">
+      <div class="alg_table table-responsive">
+        <table class="table table-bordered table-hover" style="width: 50%; height: 50%;">
+          <thead class="thead-light">
+            <tr>
+              <th>#</th>
+              <th>Case</th>
+              <th>Solution</th>
+            </tr>
+          </thead>
           <tbody>
             <tr>
-              <td>Case</td>
-              <td>Solution</td>
-            </tr>
-            <tr>
+              <td>1</td>
               <td><img src="./images/cross_case1-1.png" height="150px" width="auto"></td>
               <td>R</td>
             </tr>
             <tr>
+              <td>2</td>
               <td><img src="./images/cross_case1-2.png" height="150px" width="auto"></td>
               <td>F'</td>
             </tr>
             <tr>
+              <td>3</td>
               <td><img src="./images/cross_case1-3.png" height="150px" width="auto"></td>
               <td>F2</td>
             </tr>
             <tr>
+              <td>4</td>
               <td><img src="./images/cross_case1-4.png" height="150px" width="auto"></td>
               <td>F' U' R</td>
             </tr>
             <tr>
+              <td>5</td>
               <td><img src="./images/cross_case1-5.png" height="150px" width="auto"></td>
               <td>F U' R</td>
             </tr>
@@ -195,13 +206,44 @@
         <img src="./images/last_layer_steps.png" class="intro_img" style="height: 600px">
       </div>
       
-      <div>
+      <div class="flex-main">
         <h3>1. OLL邊塊</h3>
         <p>OLL是Orientation of the Last Layer，也就是<strong>最後一層的方向</strong>的意思</p>
-        <p>我們的第一個目標就是調整最後一層的邊塊方向，讓全部的黃色邊塊都朝上，因此會如上圖組成一個十字</p>
-        <p>那麼實際上</p>
+        <p>我們的第一個目標就是讓全部的黃色邊塊都朝上，因此會如上圖組成一個十字</p>
+        <p>那麼實際上要怎麼做呢？我們只需要一個公式：六步法</p>
+        <p><strong>六步法</strong>：R' U' F' U F R</p>
+        <img src="./images/third_six_move.png" class="intro_img">
+        <p>沒錯，就用一個公式解決，不過要記得把每一個狀況放到正確的方向去做，才不會做出多餘的步驟。</p>
       </div>
+
+      <div class="flex-main">
+        <h3>2. OLL角塊</h3>
+        <p>邊塊完成之後，剩下來就是角塊的部分了，讓全部的黃色色塊朝上。</p>
+        <div class="alg">
+          <div class="alg_table table-responsive">
+            <table class="table table-bordered table-hover" style="width: 50%; height: 50%;">
+              <thead class="thead-light">
+                <th>Case</th>
+                <th>Image</th>
+                <th>Solution</th>
+              </thead>
+              <tbody>
+                <td>Sune</td>
+                <td><img src="./images/sune.png" class="alg_table"></td>
+                <td>R U R' U R U2 R'</td>
+
+              </tbody>
+            </table>
+          </div>    
+        </div>
+      </div>
+      
     </div>
 
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+  
   </body>
 </html>

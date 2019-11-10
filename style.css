@@ -128,7 +128,8 @@ table, th, td {
 
 .alg_table {
     display: flex;
-
+    height: 150px;
+    width: auto;
 }
 
 li {
