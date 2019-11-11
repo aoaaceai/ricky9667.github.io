@@ -118,6 +118,7 @@ p {
 
 table, th, td {
     border: 1px solid black;
+    position: relative;
     border-collapse: collapse;
     padding: 15px 20px;
     width: 300px;
@@ -128,8 +129,6 @@ table, th, td {
 
 .alg_table {
     display: flex;
-    height: 150px;
-    width: auto;
 }
 
 li {
