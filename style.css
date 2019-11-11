@@ -118,13 +118,13 @@ p {
 
 table, th, td {
     border: 1px solid black;
-    position: relative;
     border-collapse: collapse;
     padding: 15px 20px;
     width: 300px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .alg_table {
