@@ -87,7 +87,7 @@
 			<p style="padding-top: 40px">那我們先從「白色邊塊圍繞黃色中心」開始吧~</p>
 			<p>遇到以下情況時，請按照下面的做法完成公式</p>
 
-			<div class="alg_table flex-main">
+			<div class="flex-main">
 				<table style="width: 50%; height: 50%">
 					<thead>
 						<tr>
@@ -220,7 +220,7 @@
 				<h3>2. OLL角塊</h3>
 				<p>邊塊完成之後，剩下來就是角塊的部分了，讓全部的黃色色塊朝上。</p>
 				<p>遇到以下情況請套用對應的公式：</p>
-				<div class="alg_table flex-main">
+				<div class="flex-main">
 					<table style="width: 80%; height: 50%">
 						<thead>
 							<th>Case</th>
@@ -230,37 +230,37 @@
 						<tbody>
 							<tr>
 								<td style="font-size: 24px;"><b>Sune</b></td>
-								<td><img src="./images/sune.png"></td>
+								<td><img src="./images/sune.png" height="150px" width="auto"></td>
 								<td><b>R U R' U R U2 R'</b></td>
 							</tr>
 							<tr>
 								<td style="font-size: 24px;"><b>Antisune</b></td>
-								<td><img src="./images/antisune.png"></td>
+								<td><img src="./images/antisune.png" height="150px" width="auto"></td>
 								<td><b>R U2 R' U' R U' R'</b></td>
 							</tr>
 							<tr>
 								<td>H</td>
-								<td><img src="./images/H.png"></td>
+								<td><img src="./images/H.png" height="150px" width="auto"></td>
 								<td><b>Sune</b> + <b>Sune</b></td>
 							</tr>
 							<tr>
 								<td>Pi</td>
-								<td><img src="./images/Pi.png"></td>
+								<td><img src="./images/Pi.png" height="150px" width="auto"></td>
 								<td><b>Sune</b> + U' + <b>Sune</b></td>
 							</tr>
 							<tr>
 								<td>U</td>
-								<td><img src="./images/U.png"></td>
+								<td><img src="./images/U.png" height="150px" width="auto"></td>
 								<td><b>Sune</b> + <b>Antisune</b></td>
 							</tr>
 							<tr>
 								<td>T</td>
-								<td><img src="./images/T.png"></td>
+								<td><img src="./images/T.png" height="150px" width="auto"></td>
 								<td><b>Sune</b> + U' + <b>Antisune</b></td>
 							</tr>
 							<tr>
 								<td>L</td>
-								<td><img src="./images/L.png"></td>
+								<td><img src="./images/L.png" height="150px" width="auto"></td>
 								<td><b>Sune</b> + U + <b>Antisune</b></td>
 							</tr>
 						</tbody>
@@ -281,12 +281,42 @@
 				<p>不用慌張！先在任意一個位置先做一次公式(T perm)，就會出現車頭燈，就能用以上的方法完成角塊的排列了。</p>
 				<img src="./images/third_PLLC_explain3.png" class="intro_img">
 			</div>
+
+			<div class="flex-main">
+				<h3>4. PLL邊塊</h3>
+				<p>終於來到復原魔術方塊的最後一個步驟了！我們最後要做的是讓最後一層的邊塊回到原位，我們會用到以下兩個公式，分別是順時針換三邊與逆時針換三邊，如下：</p>
+				<div class="alg_table flex-main">
+					<table style="width: 80%; height: 50%">
+						<thead>
+							<th>Image</th>
+							<th>Case</th>
+							<th>Solution</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img src="./images/Ub.png" height="200px" width="auto"></td>
+								<td>Ub: 順時針</td>
+								<td>R2 U R U R' U' R' U' R' U R'</td>
+							</tr>
+							<tr>
+								<td><img src="./images/Ua.png" height="200px" width="auto"></td>
+								<td>Ua: 逆時針</td>
+								<td>R U' R U R U R U' R' U' R2</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p>如果像以下狀況，四個邊塊都沒有復原呢？</p>
+				<img src="./images/third_PLLE_explain.png" class="intro_img">
+				<p>遇到這種狀況時，只要任意操作以上任一個換三邊公式後，其中一個邊就會被復原，接下來就能用以上的方法完成了。</p>
+			</div>
+			<h3>恭喜你，你成功復原了你的魔術方塊！</h3>
+			<img src="./images/solved.png" class="intro_img">
 		</div>
 
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-
-</body>
+	</body>
 
 </html>

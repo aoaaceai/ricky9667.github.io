@@ -127,10 +127,6 @@ table, th, td {
     text-align: center;
 }
 
-.alg_table {
-    display: flex;
-}
-
 li {
     font-size: 20px;
     text-align: left;
